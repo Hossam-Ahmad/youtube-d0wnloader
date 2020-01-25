@@ -13,8 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: akhileshns/heroku-deploy@v2.0.2
-          with:
-            heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-            heroku_app_name: "youtube-d0wnload"
-            heroku_email: "hosegy93@gmail.com"
-            buildpack: "heroku/python"
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "youtube-d0wnload"
+        heroku_email: "hosegy93@gmail.com"
+        buildpack: "heroku/python"
