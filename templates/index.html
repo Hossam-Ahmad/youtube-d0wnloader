@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Youtube Downloader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div style="display:block;text-align: center;margin: auto;">
+        <form action="/api" method="post">
+            <div>
+                <input name="search" style="width: 50%;">
+                <button type="submit">Download</button>
+            </div>
+            <textarea style="width: 60%;margin-top: 2em;height: 25em;">{{ result }}</textarea>
+        </form>
+    </div>
+</body>
+</html>
