@@ -12,8 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Install Bundler
+    - name: Deploying
       run: |
+        git config --global user.email "hosegy93@gmail.com"
+        git config --global user.name "Hossam Ahmad"
         git add .
-        git commit
+        git commit -am "deploy" 
         git push https://heroku:$HEROKU_API_KEY@git.heroku.com/youtube-d0wnload.git master
