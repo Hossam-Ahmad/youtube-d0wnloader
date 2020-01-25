@@ -1,6 +1,9 @@
-name: CI
+name: Deploy heroku
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -9,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: akhileshns/heroku-deploy@master # This is the action
+    - uses: akhileshns/heroku-deploy@v2.0.2
           with:
             heroku_api_key: ${{secrets.HEROKU_API_KEY}}
             heroku_app_name: "youtube-d0wnload"
