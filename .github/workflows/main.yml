@@ -1,4 +1,4 @@
-name: CI|Deploy heroku
+name: CI | Deploy heroku
 
 on:
   push:
@@ -18,4 +18,4 @@ jobs:
         git config --global user.name "Hossam Ahmad"
         git add .
         git commit -am "deploy" 
-        git push https://heroku:$HEROKU_API_KEY@git.heroku.com/youtube-d0wnload.git master
+        git push https://heroku:$HEROKU_API_KEY@git.heroku.com/youtube-d0wnload.git HEAD:master
