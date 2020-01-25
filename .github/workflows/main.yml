@@ -1,4 +1,4 @@
-name: Deploy heroku
+name: CI | Deploy heroku
 
 on:
   push:
